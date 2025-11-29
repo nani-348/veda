@@ -1,0 +1,7 @@
+{
+  "name": "Copy of VedaVision powered by ai",
+  "description": "AI-powered Ayurvedic medicinal plant identifier and guide using Gemini Vision.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

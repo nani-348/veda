@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VedaVision powered by AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              ayur: {
+                50: '#f2fcf5',
+                100: '#e1f8e8',
+                200: '#c3eed0',
+                300: '#95deb0',
+                400: '#5ec48b',
+                500: '#39a76d',
+                600: '#288656',
+                700: '#236b47',
+                800: '#1f553b',
+                900: '#1a4632',
+              }
+            },
+            keyframes: {
+              scan: {
+                '0%': { top: '0%', opacity: '0.4', boxShadow: '0 0 5px rgba(94, 196, 139, 0.5)' },
+                '50%': { top: '95%', opacity: '1', boxShadow: '0 0 20px rgba(57, 167, 109, 0.9), 0 0 10px rgba(94, 196, 139, 0.5)' },
+                '100%': { top: '0%', opacity: '0.4', boxShadow: '0 0 5px rgba(94, 196, 139, 0.5)' },
+              }
+            },
+            animation: {
+              scan: 'scan 3s ease-in-out infinite',
+              'spin-slow': 'spin 4s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-stone-50 text-stone-800 antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
